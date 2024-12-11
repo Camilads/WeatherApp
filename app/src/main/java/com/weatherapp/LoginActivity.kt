@@ -96,6 +96,9 @@ fun LoginPage(modifier: Modifier = Modifier) {
             ) {
                 Text("Login")
             }
+
+            Spacer(modifier = modifier.size(24.dp))
+
             Button(
                 onClick = { email = ""; password = "" },
                 enabled = email.isNotEmpty() && password.isNotEmpty()
